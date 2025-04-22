@@ -15,7 +15,7 @@ public class BattleSystem : MonoBehaviour
     public int enemiesDefeated = 0;
     public RewardManager rewardManager;
     public UIManager uiManager;
-    public GameObject hintText;
+    public GameObject SelectionUIGroup;
 
 
     public int cardsToSelect = 6;
@@ -35,7 +35,7 @@ public class BattleSystem : MonoBehaviour
         Debug.Log(">> Showing card selection...");
         Debug.Log($"Deck has {player.deck.allCards.Count} cards.");
 
-        hintText.SetActive(true);
+        SelectionUIGroup.SetActive(true);
 
         Dictionary<Card, int> cardCounts = new Dictionary<Card, int>();
 
@@ -79,7 +79,7 @@ public class BattleSystem : MonoBehaviour
     void StartBattleWithSelectedCards()
     {
         isSelecting = false;
-        hintText.SetActive(false);
+        SelectionUIGroup.SetActive(false);
         endTurnButton.onClick.RemoveAllListeners();
         endTurnButton.onClick.AddListener(EndPlayerTurn);
 

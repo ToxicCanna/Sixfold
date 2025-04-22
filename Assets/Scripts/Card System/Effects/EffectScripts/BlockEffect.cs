@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Card Effects/Block")]
+[CreateAssetMenu(fileName = "BlockEffect", menuName = "CardEffects/Block")]
 public class BlockEffect : CardEffect
 {
 

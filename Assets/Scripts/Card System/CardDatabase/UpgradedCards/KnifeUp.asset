@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: KnifeUp
   m_EditorClassIdentifier: 
   cardName: Knife+
-  description: Tiny Sword
-  cost: 0
-  value: 5
+  description: Quick and painful (10 Damage)
+  cost: 5
+  value: 10
   artwork: {fileID: 0}
   upgradedVersion: {fileID: 0}
   effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}

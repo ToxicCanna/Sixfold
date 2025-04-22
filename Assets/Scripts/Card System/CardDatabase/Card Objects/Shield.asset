@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d4caddb490e2574898d51af934b3faa, type: 3}
-  m_Name: BowUp
+  m_Name: Shield
   m_EditorClassIdentifier: 
-  cardName: Bow+
-  description: Because melee is for chumps (15 Damage)
-  cost: 10
-  value: 15
+  cardName: Shield
+  description: Round and Wooden (5 Block)
+  cost: 5
+  value: 5
   artwork: {fileID: 0}
-  upgradedVersion: {fileID: 0}
-  effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}
+  upgradedVersion: {fileID: 11400000, guid: c7d1104e905bfb84a988378d3e1b33f0, type: 2}
+  effect: {fileID: 11400000, guid: 215f666c942a213488097134cac04a80, type: 2}

@@ -7,6 +7,6 @@ public class DamageEffect : CardEffect
     {
         enemy.health -= card.value;
         Debug.Log($"Enemy takes {card.value} damage. Remaining HP: {enemy.health}");
-        FindObjectOfType<UIManager>().UpdateUI();
+        FindAnyObjectByType<UIManager>().UpdateUI();
     }
 }

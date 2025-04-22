@@ -316,6 +316,6 @@ public class BattleSystem : MonoBehaviour
         ShowCardSelection();
 
         // Update UI
-        FindObjectOfType<UIManager>().UpdateUI();
+        FindAnyObjectByType<UIManager>().UpdateUI();
     }
 }

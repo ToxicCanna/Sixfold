@@ -5,7 +5,6 @@ using System.Linq;
 public class Deck : MonoBehaviour
 {
     public List<Card> allCards = new();  // Full collection
-    public List<Card> cards = new();     // Active battle deck
 
     private List<Card> originalDeck = new();
 
@@ -19,6 +18,5 @@ public class Deck : MonoBehaviour
     {
         // Restore both allCards and active battle deck to original deck
         allCards = new List<Card>(originalDeck);
-        cards = new List<Card>(originalDeck);
     }
 }

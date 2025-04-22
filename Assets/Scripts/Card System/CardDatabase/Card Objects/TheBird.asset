@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d4caddb490e2574898d51af934b3faa, type: 3}
-  m_Name: KnifeCard
+  m_Name: TheBird
   m_EditorClassIdentifier: 
-  cardName: Knife
-  description: Tiny Sword
-  cost: 5
+  cardName: Special Finger
+  description: Offense Taken (+5 AP, 5 Heal)
+  cost: -5
   value: 5
   artwork: {fileID: 0}
-  upgradedVersion: {fileID: 11400000, guid: 7eecd018fa8338f4bb2b58e566a55cab, type: 2}
-  effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}
+  upgradedVersion: {fileID: 11400000, guid: 5851c0e79bde86d4b972f82c3c4b6313, type: 2}
+  effect: {fileID: 11400000, guid: 017309e7d5775b842a0c2bfbb1110f63, type: 2}

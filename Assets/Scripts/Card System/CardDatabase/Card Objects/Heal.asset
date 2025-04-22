@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d4caddb490e2574898d51af934b3faa, type: 3}
-  m_Name: BowUp
+  m_Name: Heal
   m_EditorClassIdentifier: 
-  cardName: Bow+
-  description: Because melee is for chumps (15 Damage)
-  cost: 10
-  value: 15
+  cardName: Heal
+  description: Quick pick-me-up (10 Heal)
+  cost: 15
+  value: 10
   artwork: {fileID: 0}
-  upgradedVersion: {fileID: 0}
-  effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}
+  upgradedVersion: {fileID: 11400000, guid: 727b05f363db40142b36a469778e8ae0, type: 2}
+  effect: {fileID: 11400000, guid: 017309e7d5775b842a0c2bfbb1110f63, type: 2}

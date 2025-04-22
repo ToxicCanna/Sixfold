@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d4caddb490e2574898d51af934b3faa, type: 3}
-  m_Name: BowUp
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  cardName: Bow+
-  description: Because melee is for chumps (15 Damage)
+  cardName: Bow
+  description: Ranged Weapon (10 Damage)
   cost: 10
-  value: 15
+  value: 10
   artwork: {fileID: 0}
-  upgradedVersion: {fileID: 0}
+  upgradedVersion: {fileID: 11400000, guid: 82f4b82afa0fc6941a54ff9e190fc9a8, type: 2}
   effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}

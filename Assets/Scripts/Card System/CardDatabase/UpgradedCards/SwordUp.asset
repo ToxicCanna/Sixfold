@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SwordUp
   m_EditorClassIdentifier: 
   cardName: Sword+
-  description: Pointy stick
-  cost: 10
-  value: 15
+  description: Sharper Metal (20 Damage)
+  cost: 15
+  value: 20
   artwork: {fileID: 0}
   upgradedVersion: {fileID: 0}
   effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}

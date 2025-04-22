@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d4caddb490e2574898d51af934b3faa, type: 3}
-  m_Name: BowUp
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  cardName: Bow+
-  description: Because melee is for chumps (15 Damage)
-  cost: 10
+  cardName: Sword
+  description: Sharp Metal (15 Damage)
+  cost: 15
   value: 15
   artwork: {fileID: 0}
-  upgradedVersion: {fileID: 0}
+  upgradedVersion: {fileID: 11400000, guid: afcfd67b37a66974680ae855da628855, type: 2}
   effect: {fileID: 11400000, guid: 8fd1413af14609645a53600fd1f35744, type: 2}

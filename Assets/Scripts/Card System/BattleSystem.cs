@@ -21,7 +21,6 @@ public class BattleSystem : MonoBehaviour
     public int cardsToSelect = 6;
     private List<Card> selectedCards = new List<Card>();
     private HashSet<GameObject> cardsPlayedThisTurn = new();
-    private bool isSelecting = true;
 
     private void Start()
     {
@@ -55,7 +54,8 @@ public class BattleSystem : MonoBehaviour
             Card card = entry.Key;
             int count = entry.Value;
 
-            for (int i = 0; i < count; i++) // Instantiate for each copy
+            // Instantiate for each copy
+            for (int i = 0; i < count; i++)
             {
                 GameObject cardGO = Instantiate(cardUIPrefab, selectionPanel);
                 cardGO.GetComponent<CardDisplay>().SetupSelectable(card, this, cardGO);
@@ -78,7 +78,6 @@ public class BattleSystem : MonoBehaviour
 
     void StartBattleWithSelectedCards()
     {
-        isSelecting = false;
         SelectionUIGroup.SetActive(false);
         endTurnButton.onClick.RemoveAllListeners();
         endTurnButton.onClick.AddListener(EndPlayerTurn);
@@ -97,10 +96,14 @@ public class BattleSystem : MonoBehaviour
             Card originalCard = selectedCards[i];
             Card cardInstance = originalCard.Clone();
 
-            cardInstance.SetOriginalValues();        // Set up clean baseline
-            ApplyHandBuffsAndDebuffs(cardInstance, i); // Apply temp mods to instance only
+            // Set up clean baseline
+            cardInstance.SetOriginalValues();
 
-            player.hand.AddCard(cardInstance);       // Add this instance to the hand
+            // Apply temp mods to instance only
+            ApplyHandBuffsAndDebuffs(cardInstance, i);
+
+            // Add this instance to the hand
+            player.hand.AddCard(cardInstance);
 
             // Instantiate the card UI prefab
             GameObject cardGO = Instantiate(cardUIPrefab);
@@ -111,11 +114,13 @@ public class BattleSystem : MonoBehaviour
             // Assign the card to the left or right hand based on the index
             if (i < 3)
             {
-                cardGO.transform.SetParent(leftHandPanel, false);  // Left panel for the first three cards
+                // Left panel for the first three cards
+                cardGO.transform.SetParent(leftHandPanel, false);
             }
             else
             {
-                cardGO.transform.SetParent(rightHandPanel, false); // Right panel for the last three cards
+                // Right panel for the last three cards
+                cardGO.transform.SetParent(rightHandPanel, false);
             }
         }
 
@@ -242,7 +247,6 @@ public class BattleSystem : MonoBehaviour
         Debug.Log("Starting next battle...");
 
         // Reset selection phase
-        isSelecting = true;
         selectedCards.Clear();
 
         // Clear both hand panels
@@ -276,7 +280,8 @@ public class BattleSystem : MonoBehaviour
         {
             if (card != null)
             {
-                card.SetOriginalValues();  // Reset buffs/debuffs after the battle
+                // Reset buffs/debuffs after the battle
+                card.SetOriginalValues();
             }
         }
     }
@@ -312,7 +317,6 @@ public class BattleSystem : MonoBehaviour
         cardsPlayedThisTurn.Clear();
 
         // Go back to card selection
-        isSelecting = true;
         ShowCardSelection();
 
         // Update UI

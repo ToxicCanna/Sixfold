@@ -19,7 +19,8 @@ public class Enemy : MonoBehaviour
 
         if (uiManager != null)
         {
-            uiManager.UpdateUI();  // Update health bar on start
+            // Update health bar on start
+            uiManager.UpdateUI();
         }
     }
 
@@ -47,7 +48,8 @@ public class Enemy : MonoBehaviour
     }
     public void ResetEnemy()
     {
-        health = maxHealth;  // Reset health based on maxHealth
+        // Reset health based on maxHealth
+        health = maxHealth;
         Debug.Log($"Enemy reset with health: {health}");
 
         // Update health bars when resetting enemy

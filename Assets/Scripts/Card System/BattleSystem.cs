@@ -302,6 +302,7 @@ public class BattleSystem : MonoBehaviour
         Enemy.enemyLevel = 1;
 
         // Reset player stats
+        player.maxHealth = 100;
         player.health = player.maxHealth;
         player.currentActionPoints = player.startingActionPoints;
         player.block = 0;
@@ -316,6 +317,7 @@ public class BattleSystem : MonoBehaviour
         selectedCards.Clear();
         cardsPlayedThisTurn.Clear();
 
+        endTurnButton.interactable = true;
         // Go back to card selection
         ShowCardSelection();
 
